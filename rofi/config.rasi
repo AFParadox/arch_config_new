@@ -1,0 +1,172 @@
+configuration {
+    display-drun: "";
+    display-window: "Windows:";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font Medium 10";
+    modi: "window,run,drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+*{
+    font:   "CaskaydiaCove Nerd Font 13";
+
+    border-color:                rgb(185, 185, 185);
+    spacing:                     2;
+    separatorcolor:              rgb(29, 31, 33);
+
+    background:                  rgb(20, 24, 41);
+    foreground:                  rgb( 196, 203, 212 );
+
+    normal-background:           @background;
+    normal-foreground:           @foreground;
+
+    selected-background:         rgb(30, 59, 95);   
+    selected-foreground:         rgb( 249, 249, 249 );
+    
+    lightfg:                     rgb( 88, 104, 117 );
+    urgent-foreground:           rgb( 204, 102, 102 );
+    active-foreground:           rgb( 101, 172, 255 );
+    selected-normal-foreground:  rgb( 249, 249, 249 );
+    selected-urgent-foreground:  rgb( 249, 249, 249 );
+    selected-active-foreground:  rgb( 249, 249, 249 );
+    alternate-normal-foreground: @foreground;
+    alternate-urgent-foreground: @urgent-foreground;
+    alternate-active-foreground: @active-foreground;
+
+    
+    lightbg:                     rgb( 238, 232, 213 );
+    urgent-background:           rgb( 29, 31, 33 );
+    active-background:           rgb( 29, 31, 33 );
+    selected-normal-background:  rgb(30, 59, 95);
+    selected-urgent-background:  rgb( 165, 66, 66 );
+    selected-active-background:  rgb( 68, 145, 237 );
+    alternate-normal-background: rgb( 64, 69, 82 );
+    alternate-urgent-background: rgb( 75, 81, 96 );
+    alternate-active-background: rgb( 75, 81, 96 );
+    background-color:rgba(3, 0, 46, 0);
+
+
+}
+
+window {
+    width: 40%;
+    background-color: @background;
+    border-radius: 5px;
+    transparency: "real";
+    border: 2px;
+    border-color: @border-color;
+}
+
+mainbox {
+    
+}
+
+inputbar {
+    spacing:    0;
+    text-color: @normal-foreground;
+    padding:    10px ;
+    border: 0px;
+    border-color: @border-color;
+    children:   [ icon-paste,textbox-prompt-colon,entry,case-indicator ];
+}
+icon-paste {
+    expand: false;
+    filename: "~/.config/rofi/icons/search.png";
+    size: 15;
+    vertical-align: 0.5;
+}
+prompt {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        "  ";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: @normal-foreground;
+}
+entry {
+    spacing:    0;
+    text-color: @normal-foreground;
+    hide-cursor-on-empty: false;
+}
+
+listview {
+    fixed-height: 0;
+    border:       2px 0px 0px ;
+    border-color: @border-color;
+    spacing:      0px ;
+    scrollbar:    false;
+    columns: 2;
+    lines: 5;
+    fixed-height: true;
+}
+element {
+    border:  0;
+    padding: 12 ;
+}
+element-icon {
+    size: 50;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align: 0.5;
+    padding: 0px 10px;
+}
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element.alternate.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element.selected.normal {
+    background-color: @selected-background;
+    text-color:       @selected-foreground;
+}
+
+
+
+mode-switcher {
+    border:       2px 0px 0px ;
+    border-color: @separatorcolor;
+    childen: [button];
+}
+button {
+    spacing:    0;
+    text-color: @normal-foreground;
+    str: "Apps";
+}
+button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+
+
+case-indicator {
+    spacing:    0;
+    text-color: @normal-foreground;
+}
+
+message {
+    border:       2px;
+    border-color: @separatorcolor;
+    padding:      1px ;
+}
+
+textbox {
+    text-color: @foreground;
+}
+
+scrollbar {
+    width:        4px ;
+    border:       0;
+    handle-color: @normal-foreground;
+    handle-width: 8px ;
+    padding:      0;
+}
