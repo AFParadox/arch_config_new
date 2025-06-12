@@ -1,2 +1,15 @@
 Code - OSS/
 BraveSoftware/
+cava/
+dconf/
+go/
+gtk-3.0/
+neofetch/
+nitrogen/
+pulse/
+systemd/
+
+mimeapps.list
+QtProject.conf
+user-dirs.dirs
+user-dirs.locale
