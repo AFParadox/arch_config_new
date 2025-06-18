@@ -1,0 +1,13 @@
+PACKAGES
+os-prober
+git
+base-devel
+code
+
+YAY
+numlockx
+brave
+waypaper
+telegram
+python-pywal
+swww (wallpaper)

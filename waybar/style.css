@@ -1,1 +1,149 @@
- 
+@import "/home/cheetah/.cache/wal/colors-waybar.css";
+
+
+* {
+  font-family: "Hasklug Nerd Font";
+  
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+  
+}
+
+#custom-appmenu {
+  margin: 10px 3px 10px 5px;
+  padding: 4px 10px;
+
+  font-size: 12px;
+  
+  border-radius: 14px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#workspaces {
+  margin: 10px;
+  padding: 4px 1px;
+
+  font-weight: normal;
+  font-style: normal;
+  
+  border-radius: 14px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#workspaces button {
+  margin: 0px 3px;
+  padding: 0px 10px;
+
+  font-size: 10px;
+  transition: all 0.3s ease-in-out;
+  
+  border-radius: 12px;
+  background-color: @color7;
+  opacity: 0.8;
+}
+
+#workspaces button.active {
+  min-width: 30px;
+
+  background-size: 400% 400%;
+  transition: all 0.3s ease-in-out;
+
+  border-radius: 10px;
+  background-color: @color4;
+  opacity: 0.8;
+}
+
+#workspaces button:hover {  
+  min-width: 20px;
+
+  transition: all 0.3s ease-in-out;
+  background-size: 400% 400%;
+  
+  border-radius: 10px;
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+#window {
+  padding: 4px 10px;
+  margin: 10px 2px;
+  
+  border-radius: 14px;
+  border: 3px solid @color4;
+  color: @foreground;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#clock {
+  padding: 4px 10px;
+  margin: 10px 5px 10px 2px;
+
+  border-radius: 16px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#idle_inhibitor {
+  padding: 4px 17px 4px 10px;
+  margin: 10px 3px 10px 2px;
+  
+  border-radius: 14px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#hardware {
+  padding: 4px 10px 4px 10px;
+  margin: 10px 3px 10px 2px;
+  
+  border-radius: 14px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#cpu {
+  padding: 0px 15px 0px 0px;
+}
+
+#memory {
+  padding: 0px 15px 0px 0px;
+}
+
+#temperature {
+  padding: 0px 15px 0px 0px;
+}
+
+#network {
+  padding: 0px 15px 0px 0px;
+}
+
+#pulseaudio {
+  padding: 4px 10px;
+  margin: 10px 3px 10px 2px;
+
+  border-radius: 14px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
+
+#custom-power {
+  padding: 4px 5px 4px 10px;
+  margin: 10px 3px 10px 2px;
+  
+  border-radius: 14px;
+  border: 3px solid @color4;
+  background-color: @color2;
+  opacity: 0.8;
+}
