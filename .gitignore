@@ -9,6 +9,7 @@ nitrogen/
 pulse/
 systemd/
 OpenRGB/
+waypaper/
 
 mimeapps.list
 QtProject.conf
