@@ -1,11 +1,7 @@
 #!/bin/bash
 
-waypaper --random --folder ~/Pictures/wallpapers/
-
-sleep 0.5
-
-# Extract the wallpaper path from Waypaper config
-WALLPAPER=$(eval echo $(grep '^wallpaper' ~/.config/waypaper/config.ini | cut -d '=' -f2- | xargs))
+# Extract the wallpaper path from hyprpaper config
+WALLPAPER=$(eval echo $(grep 'preload' ~/.config/hypr/hyprpaper.conf | cut -d '=' -f2- | xargs))
 
 # Launch pywal
 wal -i "$WALLPAPER"
