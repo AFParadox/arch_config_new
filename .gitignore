@@ -10,8 +10,12 @@ pulse/
 systemd/
 OpenRGB/
 waypaper/
+kde.org/
+session/
 
 mimeapps.list
 QtProject.conf
 user-dirs.dirs
 user-dirs.locale
+dolphinrc
+trashrc
