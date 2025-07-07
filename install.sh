@@ -18,7 +18,7 @@ if [[ "$WIFI_ANSWER" == "y" ]]; then
 fi
 
 # Install essential system packages via pacman
-sudo pacman -S --needed unzip networkmanager efibootmgr os-prober ntfs-3g git base-devel code 
+sudo pacman -S --needed greetd unzip networkmanager efibootmgr os-prober ntfs-3g git base-devel code 
 
 # Clone and install yay (AUR helper)
 git clone https://aur.archlinux.org/yay.git
@@ -27,7 +27,7 @@ makepkg -si --noconfirm
 cd ~
 
 # Install AUR packages via yay
-yay -S --needed hyprpaper hyprlock brave-bin telegram-desktop nautilus man-db man-pages
+yay -S --needed neofetch hyprpaper hyprlock brave-bin telegram-desktop nautilus man-db man-pages
 
 
 # Clone configuration files

@@ -12,6 +12,7 @@ OpenRGB/
 waypaper/
 kde.org/
 session/
+miopen/
 
 mimeapps.list
 QtProject.conf
@@ -19,3 +20,5 @@ user-dirs.dirs
 user-dirs.locale
 dolphinrc
 trashrc
+hypr/hyprpaper.conf
+kwalletrc

@@ -17,3 +17,11 @@ done
 
 # Symlink for automatic sync of hyprlock wallpaper
 ln -sf $RANDOM_WALLPAPER ~/.cache/current_wallpaper.jpg
+
+wal -i "$RANDOM_WALLPAPER"
+
+hyprpaper &
+
+sleep 1
+
+waybar &

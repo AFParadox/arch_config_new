@@ -13,7 +13,7 @@
         "default": ""
         },
         "persistent-workspaces": {
-        "*": 2
+        "*": 4
         }
     },
     // Taskbar
@@ -86,7 +86,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10
+        "spacing": 15
     },
     "cpu": {
         "format": "{usage}% ",

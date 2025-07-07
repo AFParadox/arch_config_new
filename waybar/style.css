@@ -6,7 +6,7 @@
   
   color: #FFFFFF;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   font-size: 14px;
   background-color: rgba(0, 0, 0, 0);
   
@@ -18,35 +18,33 @@
 
   font-size: 12px;
   
-  border-radius: 14px;
-  border: 3px solid @color4;
+  /* border-radius: 14px; */
   background-color: @color2;
   opacity: 0.8;
 }
 
 #workspaces {
   margin: 10px;
-  padding: 4px 1px;
+  padding: 5px 2px;
 
   font-weight: normal;
   font-style: normal;
   
   border-radius: 14px;
-  border: 3px solid @color4;
   background-color: @color2;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #workspaces button {
   margin: 0px 3px;
-  padding: 0px 10px;
+  padding: 0px 5px;
 
   font-size: 10px;
   transition: all 0.3s ease-in-out;
   
   border-radius: 12px;
   background-color: @color7;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #workspaces button.active {
@@ -55,12 +53,12 @@
   background-size: 400% 400%;
   transition: all 0.3s ease-in-out;
 
-  border-radius: 10px;
+  border-radius: 12px;
   background-color: @color4;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-#workspaces button:hover {  
+#workspaces button.hover {  
   min-width: 20px;
 
   transition: all 0.3s ease-in-out;
@@ -76,7 +74,6 @@
   margin: 10px 2px;
   
   border-radius: 14px;
-  border: 3px solid @color4;
   color: @foreground;
   background-color: @color2;
   opacity: 0.8;
@@ -87,7 +84,6 @@
   margin: 10px 5px 10px 2px;
 
   border-radius: 16px;
-  border: 3px solid @color4;
   background-color: @color2;
   opacity: 0.8;
 }
@@ -97,7 +93,6 @@
   margin: 10px 3px 10px 2px;
   
   border-radius: 14px;
-  border: 3px solid @color4;
   background-color: @color2;
   opacity: 0.8;
 }
@@ -107,7 +102,6 @@
   margin: 10px 3px 10px 2px;
   
   border-radius: 14px;
-  border: 3px solid @color4;
   background-color: @color2;
   opacity: 0.8;
 }
@@ -133,7 +127,6 @@
   margin: 10px 3px 10px 2px;
 
   border-radius: 14px;
-  border: 3px solid @color4;
   background-color: @color2;
   opacity: 0.8;
 }
@@ -143,7 +136,15 @@
   margin: 10px 3px 10px 2px;
   
   border-radius: 14px;
-  border: 3px solid @color4;
   background-color: @color2;
   opacity: 0.8;
+}
+
+#tray {
+  padding: 4px 10px 4px 10px;
+  margin: 10px 3px 10px 2px;
+  
+  border-radius: 12px;
+  background-color: @color2;
+  opacity: 0.8;  
 }

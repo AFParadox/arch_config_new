@@ -17,13 +17,13 @@ configuration {
     spacing:                     2;
     separatorcolor:              rgb(29, 31, 33);
 
-    background:                  rgb(20, 24, 41);
+    background:                  rgb(15, 18, 31);
     foreground:                  rgb( 196, 203, 212 );
 
     normal-background:           @background;
     normal-foreground:           @foreground;
 
-    selected-background:         rgb(30, 59, 95);   
+    selected-background:         rgb(18, 36, 58);   
     selected-foreground:         rgb( 249, 249, 249 );
     
     lightfg:                     rgb( 88, 104, 117 );
@@ -56,7 +56,7 @@ window {
     background-color: @background;
     border-radius: 5px;
     transparency: "real";
-    border: 2px;
+    border: 0px;
     border-color: @border-color;
 }
 
@@ -96,7 +96,7 @@ entry {
 
 listview {
     fixed-height: 0;
-    border:       2px 0px 0px ;
+    border:       0px 0px 0px ;
     border-color: @border-color;
     spacing:      0px ;
     scrollbar:    false;
