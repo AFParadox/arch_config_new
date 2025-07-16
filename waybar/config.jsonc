@@ -22,12 +22,13 @@
         "idle_inhibitor",
         "pulseaudio",
         "power-profiles-daemon",
+        "network",
         "group/hardware",
         "backlight",
         "sway/language",
         "tray",
-        "custom/power",
-        "clock"
+        "clock",
+        "custom/power"
     ],
     // Modules configuration
     
@@ -37,8 +38,7 @@
         "modules": [
             "cpu",
             "memory",
-            "temperature",
-            "network"
+            "temperature"
         ],
         "spacing": 100
 

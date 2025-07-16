@@ -2,29 +2,35 @@
 
 
 * {
-  font-family: "Hasklug Nerd Font";
-  
-  color: #FFFFFF;
+  margin-top: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
   border: none;
   border-radius: 14px;
-  font-size: 14px;
+  
   background-color: rgba(0, 0, 0, 0);
   
+  opacity: 0.98;
+  
+  font-family: "Hasklug Nerd Font";
+  font-size: 14px;
+  color: @color2;
 }
 
-#custom-appmenu {
-  margin: 10px 3px 10px 5px;
+#custom-appmenu {  
   padding: 4px 10px;
 
-  font-size: 12px;
+  background-color: @color0;
+}
+
+#window {
+  padding: 4px 10px;
   
-  /* border-radius: 14px; */
-  background-color: @color2;
-  opacity: 0.8;
+  border-radius: 14px;
+  background-color: @color0;
 }
 
 #workspaces {
-  margin: 10px;
   padding: 5px 2px;
 
   font-weight: normal;
@@ -32,7 +38,6 @@
   
   border-radius: 14px;
   background-color: @color2;
-  opacity: 0.9;
 }
 
 #workspaces button {
@@ -43,108 +48,97 @@
   transition: all 0.3s ease-in-out;
   
   border-radius: 12px;
-  background-color: @color7;
-  opacity: 0.9;
+  background-color: @color0;
 }
 
 #workspaces button.active {
   min-width: 30px;
 
-  background-size: 400% 400%;
   transition: all 0.3s ease-in-out;
 
   border-radius: 12px;
   background-color: @color4;
-  opacity: 0.9;
 }
 
-#workspaces button.hover {  
+#workspaces button:hover {  
   min-width: 20px;
 
   transition: all 0.3s ease-in-out;
-  background-size: 400% 400%;
   
   border-radius: 10px;
-  background-color: #000000;
-  opacity: 0.8;
+  background-color: #c03d3d;
 }
 
-#window {
-  padding: 4px 10px;
-  margin: 10px 2px;
-  
-  border-radius: 14px;
-  color: @foreground;
-  background-color: @color2;
-  opacity: 0.8;
+#workspaces button.active:hover {
+  min-width: 30px;
+
+  border-radius: 12px;
+  background-color: @color4;
 }
 
 #clock {
   padding: 4px 10px;
-  margin: 10px 5px 10px 2px;
 
   border-radius: 16px;
-  background-color: @color2;
-  opacity: 0.8;
+  background-color: @color0;
 }
 
 #idle_inhibitor {
   padding: 4px 17px 4px 10px;
-  margin: 10px 3px 10px 2px;
   
   border-radius: 14px;
-  background-color: @color2;
-  opacity: 0.8;
+  background-color: @color0;
 }
 
 #hardware {
   padding: 4px 10px 4px 10px;
-  margin: 10px 3px 10px 2px;
-  
+
   border-radius: 14px;
-  background-color: @color2;
-  opacity: 0.8;
+  background-color: @color0;
 }
 
 #cpu {
   padding: 0px 15px 0px 0px;
+  margin: 0px 1px;
+  color: @color13;
 }
 
 #memory {
   padding: 0px 15px 0px 0px;
+  margin: 0px 1px;
+  color: @color12;
 }
 
 #temperature {
   padding: 0px 15px 0px 0px;
+  margin: 0px 1px;
+  color: @color11;
 }
 
 #network {
-  padding: 0px 15px 0px 0px;
+  padding: 0px 20px 0px 10px;
+  margin: 0px 1px;
+  color: @color2;
+  background-color: @color0;
 }
 
 #pulseaudio {
   padding: 4px 10px;
-  margin: 10px 3px 10px 2px;
 
   border-radius: 14px;
-  background-color: @color2;
-  opacity: 0.8;
+  background-color: @color0;
 }
 
 #custom-power {
   padding: 4px 5px 4px 10px;
-  margin: 10px 3px 10px 2px;
   
   border-radius: 14px;
-  background-color: @color2;
-  opacity: 0.8;
+  background-color: @color0;
 }
 
 #tray {
   padding: 4px 10px 4px 10px;
-  margin: 10px 3px 10px 2px;
   
   border-radius: 12px;
   background-color: @color2;
-  opacity: 0.8;  
 }
