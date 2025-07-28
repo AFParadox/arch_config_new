@@ -16,7 +16,7 @@ for MON in $MONITORS; do
 done
 
 # Symlink for automatic sync of hyprlock wallpaper
-ln -sf $RANDOM_WALLPAPER ~/.cache/current_wallpaper.jpg
+ln -sf "$RANDOM_WALLPAPER" ~/.cache/current_wallpaper.jpg
 
 wal -i "$RANDOM_WALLPAPER"
 
