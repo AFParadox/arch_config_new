@@ -20,6 +20,8 @@ ln -sf "$RANDOM_WALLPAPER" ~/.cache/current_wallpaper.jpg
 
 wal -i "$RANDOM_WALLPAPER"
 
+~/.config/rofi/scripts/setup_rofi.sh & disown
+
 hyprpaper &
 
 sleep 1
