@@ -81,7 +81,9 @@ configuration {
     alternate-normal-background: rgb( 64, 69, 82 );
     alternate-urgent-background: rgb( 75, 81, 96 );
     alternate-active-background: rgb( 75, 81, 96 );
-    background-color:rgba(3, 0, 46, 0);
+    
+    background-color:rgba(0, 0, 0, 0);
+    text-color: @color2;
 }
 
 EOF
